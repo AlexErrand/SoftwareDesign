@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"QuizInterface"},{"p":"<Unnamed>","l":"QuizTest"}];updateSearchResults();

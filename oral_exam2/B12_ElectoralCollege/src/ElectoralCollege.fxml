@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="652.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CollegeController">
+   <children>
+      <RadioButton fx:id="democraticRB" layoutX="584.0" layoutY="174.0" mnemonicParsing="false" onAction="#onDemSelected" text="Democratic">
+         <toggleGroup>
+            <ToggleGroup fx:id="votingButtons" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="republicanRB" layoutX="584.0" layoutY="207.0" mnemonicParsing="false" onAction="#onRepSelected" text="Republican" toggleGroup="$votingButtons" />
+      <RadioButton fx:id="undecidedRB" layoutX="584.0" layoutY="242.0" mnemonicParsing="false" onAction="#onUndSelected" text="Undecided" toggleGroup="$votingButtons" />
+      <Label fx:id="demoVoteStatus" layoutX="536.0" layoutY="128.0" text="Democratic Votes:" />
+      <Label fx:id="repVoteStatus" layoutX="537.0" layoutY="83.0" text="Republican Votes:" />
+      <Label fx:id="undVoteStatus" layoutX="537.0" layoutY="42.0" text="Undecided Votes:" />
+      <ImageView fx:id="votingMap" fitHeight="237.0" fitWidth="366.0" layoutX="60.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true" />
+      <PieChart fx:id="pieChart" layoutX="26.0" layoutY="51.0" prefHeight="223.0" prefWidth="303.0" />
+      <ChoiceBox fx:id="listOfStates" layoutX="359.0" layoutY="51.0" onMouseClicked="#onDropdown" prefWidth="150.0" />
+      <Label fx:id="electionStatus" layoutX="469.0" layoutY="446.0" prefHeight="17.0" prefWidth="195.0" text="Election Status: Undecided" />
+   </children>
+</AnchorPane>
